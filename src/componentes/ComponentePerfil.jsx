@@ -1,14 +1,14 @@
 function ComponentePerfil(props) {
   return (
     <div className="minhaClasse">
-      <h1>Perfil</h1>
+      <h1 id="titulo">Perfil</h1>
 
-      <div>
+      <div class="paragrafos">
         <p>Nome: {props.nome}</p>
         <p>Idade: {props.idade}</p>
       </div>
 
-      <div>Descrição: {props.descricao}</div>
+      <div class="descricao">Descrição: {props.descricao}</div>
     </div>
   );
 }

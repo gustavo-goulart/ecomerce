@@ -7,6 +7,19 @@
   border: 2px solid yellow;
 }
 
+#titulo {
+  text-transform: uppercase;
+}
+
+.paragrafos {
+  font-size: 20px;
+}
+
+.descricao {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .App {
   text-align: center;
 }
