@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-function ComponenteResumoNome(props) {
+function ComponenteNome2() {
   const [nome, setNome] = useState("Gustavo");
-
-  useEffect(() => {
-    alert(`Alterado o nome para ${nome}`);
-  }, [nome]);
 
   return (
     <div>
@@ -21,4 +17,4 @@ function ComponenteResumoNome(props) {
   );
 }
 
-export { ComponenteResumoNome };
+export { ComponenteNome2 };

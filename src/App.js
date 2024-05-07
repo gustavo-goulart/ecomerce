@@ -3,6 +3,9 @@ import { ComponenteNome } from "./componentes/ComponenteNome";
 import { ComponenteResumoNome } from "./componentes/ComponenteResumoNome";
 import { ComponenteEstilo } from "./componentes/ComponenteEstilo";
 import { ComponentePerfil } from "./componentes/ComponentePerfil";
+import { ComponenteNome2 } from "./componentes/ComponenteNome2";
+import Button from "react-bootstrap/Button";
+import "font-awesome/css/font-awesome.css";
 
 function App() {
   return (
@@ -24,6 +27,11 @@ function App() {
         idade="42 anos"
         descricao="Estudante do Curso Desenvolvimento Web pela Harve"
       />
+      <hr />
+      <ComponenteNome2 />
+      <hr />
+      <h2>Botão do Bootstrap</h2>
+      <Button variant="primary">Primary</Button>{" "}
     </div>
   );
 }

@@ -20,6 +20,29 @@
   font-size: 24px;
 }
 
+.btns {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #000;
+  width: 210px;
+  height: 44px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.paragrafo-nome {
+  font-weight: 700;
+  font-size: 25px;
+}
+
 .App {
   text-align: center;
 }
