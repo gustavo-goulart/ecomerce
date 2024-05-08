@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 
-function Produto() {
+function Home() {
   return (
     <Container className="mt-2">
       <h2>Produto</h2>
@@ -8,4 +8,4 @@ function Produto() {
   );
 }
 
-export { Produto };
+export { Home };
