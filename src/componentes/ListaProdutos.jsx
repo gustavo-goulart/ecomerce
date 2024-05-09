@@ -5,7 +5,7 @@ import { Bounce, toast } from "react-toastify";
 function ListaProdutos() {
   const [produtos, setProdutos] = useState([]);
 
-  function mensagemDeErro(mensagem = "Mensagem de erro") {
+  function mensagemDeErro(mensagem = "Ops!! Deu erro...") {
     toast.error(mensagem, {
       position: "top-center",
       autoClose: 5000,
