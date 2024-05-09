@@ -1,9 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Bounce, toast } from "react-toastify";
+import api from "../services/api";
 
 function ListaProdutos() {
   const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    buscarProdutos();
+  }, []);
+
+  async function buscarProdutos() {
+    try {
+      const response = await api.get("/productlistbyremark/home");
+      setProdutos(response.data);
+    } catch (error) {
+      mensagemDeErro("Erro para buscar os produtos.");
+    }
+  }
 
   function mensagemDeErro(mensagem = "Ops!! Deu erro...") {
     toast.error(mensagem, {
