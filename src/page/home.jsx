@@ -6,7 +6,7 @@ import { Footer } from "../componentes/Footer";
 
 function Home() {
   return (
-    <Container className="mt-2">
+    <Container>
       <NavBar />
       <CarouselAnuncios />
       <ListaProdutos />
