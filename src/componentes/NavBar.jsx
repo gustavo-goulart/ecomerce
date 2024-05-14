@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo_idkshop from "../assets/images/logo_idkshop.png";
+import { GerenciarLogin } from "./GereciarLogin";
 
 function NavBar() {
   return (
@@ -15,6 +16,11 @@ function NavBar() {
           <Nav.Link href="#pedidos">Pedidos</Nav.Link>
           <Nav.Link href="#contato">Contato</Nav.Link>
         </Nav>
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            <GerenciarLogin />
+          </Navbar.Text>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
