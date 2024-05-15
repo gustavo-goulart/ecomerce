@@ -3,6 +3,7 @@ import { ListaProdutos } from "../componentes/ListaProdutos";
 import { Produto } from "../page/Produto";
 import { Home } from "../page/home";
 import { Login } from "../page/Login";
+import { Contato } from "../page/Contato";
 
 function RouteApp() {
   return (
@@ -10,9 +11,9 @@ function RouteApp() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/listaprodutos" element={<ListaProdutos />} />
-        <Route path="/produto" element={<Produto />} />
+        <Route path="/produto" element={<ListaProdutos />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/contato" element={<Contato />} />
       </Routes>
     </BrowserRouter>
   );

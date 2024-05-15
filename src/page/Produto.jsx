@@ -1,9 +1,10 @@
 import { Container } from "react-bootstrap";
+import { ListaProdutos } from "../componentes/ListaProdutos";
 
 function Produto() {
   return (
     <Container className="mt-2">
-      <h2>Produto</h2>
+      <ListaProdutos />
     </Container>
   );
 }

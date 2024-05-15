@@ -12,9 +12,9 @@ function NavBar() {
           <img src={logo_idkshop} />
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#pedidos">Pedidos</Nav.Link>
-          <Nav.Link href="#contato">Contato</Nav.Link>
+          <Nav.Link href="../">Home</Nav.Link>
+          <Nav.Link href="../Produto">Produtos</Nav.Link>
+          <Nav.Link href="../Contato">Contato</Nav.Link>
         </Nav>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
